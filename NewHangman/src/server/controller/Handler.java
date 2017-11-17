@@ -136,6 +136,7 @@ public class Handler extends Thread {
 	// Returns a dashed-word based on the guess the user made
 	private String ReceiveWordFromServer() {
 		if (guessedLetters.length() > 0) {
+			// Regular expression
 			return currWord.replaceAll("[^" + guessedLetters + "]", "-");
 		} else {
 			StringBuilder sb = new StringBuilder();

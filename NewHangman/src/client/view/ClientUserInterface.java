@@ -82,6 +82,8 @@ public class ClientUserInterface extends Thread {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				msgsnd("start");
+				toppanel.setVisible(true);
+				bottompanel.setVisible(true);
 				answer.requestFocus();
 			}
 		});
@@ -94,6 +96,7 @@ public class ClientUserInterface extends Thread {
 		toppanel.add(score).setForeground(Color.white);
 		toppanel.add(Box.createHorizontalGlue());
 		toppanel.add(attempts).setForeground(Color.white);
+		toppanel.setVisible(false);
 		middlepanel.setBackground(Color.orange);
 		middlepanel.setLayout(new BoxLayout(middlepanel, BoxLayout.LINE_AXIS));
 		middlepanel.add(message).setForeground(Color.blue);
@@ -103,14 +106,16 @@ public class ClientUserInterface extends Thread {
 		middlepanel.add(newgame);
 		bottompanel.add(answer);
 		bottompanel.add(send);
+		bottompanel.setVisible(false);
 		panel = new JPanel(new BorderLayout());
 		panel.add(toppanel, BorderLayout.PAGE_START);
 		panel.add(middlepanel, BorderLayout.CENTER);
 		panel.add(bottompanel, BorderLayout.PAGE_END);
-
+		panel.setSize(1000, 1000);
 		JFrame frame = new JFrame("Let's Play Hangman");
 		frame.add(panel);
 		frame.pack();
+		frame.setSize(700, 400);
 		frame.setVisible(true);
 		frame.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent we) {
