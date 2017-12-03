@@ -1,4 +1,4 @@
 I have used an Oracle database. So, In the Databaseutil class change the classname and driver information. 
 Also, FileServerDAO class uses queries which are compatible with oracle.
 access the 'query' file to create table , The commands are already written in the file.
-just execute the queries
+just execute the queries. You will need a ojdbc14 jar file if you are running oracle 11g
