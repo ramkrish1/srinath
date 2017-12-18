@@ -1,4 +1,4 @@
-# ASSIGNMENT-5 Hangman application(please download the .rar file)
+# ASSIGNMENT-5 Hangman application(please download the finalHangman.rar file)
 
 fileHangman.rar is the ASSIGNMENT-5 HANGMAN-ANDROID APPLICATION. 
 You can directly download the file and check it.
