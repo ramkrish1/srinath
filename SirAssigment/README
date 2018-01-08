@@ -1,0 +1,4 @@
+After Loading the project, Run the 'EmployeeHome.jsp' file in Webcontent folder.
+When the Login page appears on the web, enter the username as 'admin' and password as 'admin'.
+Since I have used Oracle DB, the configurations in the Util class of com.Util package needs to be changed to the database that you are going to use
+Add ojdbc14.jar file if you are using oracle DB.
